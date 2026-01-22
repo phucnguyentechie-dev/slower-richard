@@ -1,5 +1,5 @@
 
-Stagehand – Day 5 Report: End-to-End Workflow + Data Quality
+Stagehand – End-to-End Workflow + Data Quality
 
 Purpose
 
