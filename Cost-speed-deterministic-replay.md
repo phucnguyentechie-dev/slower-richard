@@ -80,17 +80,3 @@ Dynamic UI Handling
 	•	Added a reusable helper: dismissInterruptions() (cookie banners, modals, announcements)
 	•	For paginated extraction: checkpoint per page to avoid full restart
 
-⸻
-
-Hands-on Implementation
-
-“Before vs After” Outcome
-	•	Second run is significantly faster due to fewer repeated interpretive actions + caching
-	•	Failures are more diagnosable due to step-level metrics + artifacts
-	•	Workflow is now closer to “CI runnable” quality (predictable, report-driven)
-
-⸻
-
-Issues / Findings
-	•	Some flows still require a small amount of flexible interpretation when UI variants appear (A/B layouts). These are now isolated behind a single fallback step, not scattered across the workflow.
-	•	Cache usefulness depends on keeping steps consistent; frequent prompt changes reduce cache hit rates.
